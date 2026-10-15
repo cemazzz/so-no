@@ -1,4 +1,4 @@
-const CACHE = 'so-no-tro-21cdb6d1';
+const CACHE = 'so-no-tro-1bccdf98';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
